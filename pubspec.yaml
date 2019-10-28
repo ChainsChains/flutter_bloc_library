@@ -29,10 +29,12 @@ dependencies:
   flare_flutter: ^1.6.2
   bloc: ^0.16.0
   flutter_bloc: ^0.22.0
+  test: ^1.9.2
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  mockito: ^4.1.1
+#  flutter_test:
+#    sdk: flutter
 
 
 # For information on the generic Dart part of this file, see the

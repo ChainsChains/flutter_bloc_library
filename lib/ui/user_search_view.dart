@@ -1,16 +1,16 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc_library/api/models/user.dart';
 import 'package:flutter_bloc_library/bloc/bloc_provider.dart';
 import 'package:flutter_bloc_library/bloc/user_search_bloc.dart';
+import 'package:flutter_bloc_library/repository/gituser_repository.dart';
 
 import 'app_drawer.dart';
 
 class UserSearchView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final bloc = UserSearchBloc();
+    final bloc = UserSearchBloc(GitUserRepository());
     return BlocProvider<UserSearchBloc>(
       bloc: bloc,
       child: Scaffold(
