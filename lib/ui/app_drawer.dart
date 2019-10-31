@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc_library/ui/my_grid_view.dart';
 import 'package:flutter_bloc_library/ui/user_search_view.dart';
 
 
@@ -12,8 +13,8 @@ class AppDrawer extends StatelessWidget {
           _buildDrawerHeader(),
           _buildDrawerItem(Icons.search, 'Users search',
               () => _navigateTo(context, UserSearchView())),
-//          _buildDrawerItem(Icons.flag, 'Countries',
-//              () => _navigateTo(context, CountriesView())),
+          _buildDrawerItem(Icons.grid_on, 'MyGrid',
+              () => _navigateTo(context, MyGridView())),
 //          _buildDrawerItem(Icons.favorite_border, 'Something',
 //              () => _navigateTo(context, SomethingView())),
 //          _buildDrawerItem(Icons.favorite_border, 'Something2',
